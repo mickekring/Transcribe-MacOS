@@ -1,0 +1,351 @@
+# =====================================
+# Documentation Files (as requested)
+# =====================================
+*.md
+!README.md  # Keep the main README visible
+Documentation/
+Docs/
+docs/
+
+# =====================================
+# Xcode
+# =====================================
+## User settings
+xcuserdata/
+
+## Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+## Build generated
+build/
+Build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcshareddata/
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# =====================================
+# Swift Package Manager
+# =====================================
+.swiftpm
+.build/
+Packages/
+Package.pins
+Package.resolved
+SourcePackages/
+
+# =====================================
+# CocoaPods
+# =====================================
+Pods/
+
+# =====================================
+# Carthage
+# =====================================
+Carthage/Build/
+Carthage/Checkouts/
+
+# =====================================
+# fastlane
+# =====================================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# =====================================
+# macOS System Files
+# =====================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# =====================================
+# Windows Files (if cross-platform)
+# =====================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# =====================================
+# Linux Files
+# =====================================
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =====================================
+# IDE and Editors
+# =====================================
+# JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+cmake-build-*/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+*.vsix
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+tags
+[._]*.un~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =====================================
+# Backup and Temporary Files
+# =====================================
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+tmp/
+temp/
+cache/
+*.cache
+
+# =====================================
+# Logs
+# =====================================
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+crash_reports/
+*.crash
+*.crashlog
+
+# =====================================
+# API Keys and Secrets
+# =====================================
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.cer
+*.pfx
+secrets/
+credentials/
+config/secrets/
+private/
+
+# =====================================
+# AI Models (can be large)
+# =====================================
+*.mlmodel
+*.mlmodelc
+*.onnx
+*.pb
+*.h5
+*.keras
+*.pth
+*.pt
+*.weights
+*.caffemodel
+Models/
+models/
+WhisperKitModels/
+KBWhisperModels/
+whisper-models/
+*.whisperkit
+*.coreml
+
+# =====================================
+# Media Files (development artifacts)
+# =====================================
+# Audio files created during testing
+recording_*.m4a
+recording_*.wav
+recording_*.mp3
+youtube_*.m4a
+youtube_*.mp4
+youtube_*.webm
+quick_recording_*
+test_*.m4a
+test_*.wav
+
+# Keep sample files
+!samples/*.m4a
+!samples/*.wav
+
+# =====================================
+# Archive Files
+# =====================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.dmg
+*.pkg
+
+# =====================================
+# Database Files
+# =====================================
+*.sqlite
+*.sqlite3
+*.db
+*.realm
+*.rdb
+
+# =====================================
+# Test Coverage
+# =====================================
+*.coverage
+*.lcov
+coverage/
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.xcresult
+
+# =====================================
+# Transcription Outputs
+# =====================================
+transcriptions/
+output/
+*.transcription
+*.srt
+*.vtt
+*.txt
+!Localizable.strings
+!sample.txt
+
+# =====================================
+# Development Specific
+# =====================================
+.dev/
+development/
+scratch/
+TODO.txt
+NOTES.txt
+*.TODO
+*.FIXME
+experiments/
+playground/
+
+# =====================================
+# Security Reports (sensitive info)
+# =====================================
+SECURITY_REPORT_DETAILED.md
+SECURITY_AUDIT_*.md
+security_audit/
+penetration_test/
+vulnerability_scan/
+
+# =====================================
+# User-specific Project Settings
+# =====================================
+*.xcuserstate
+project.xcworkspace/
+*.xcworkspace/xcuserdata/
+
+# =====================================
+# Dependencies to Regenerate
+# =====================================
+node_modules/
+bower_components/
+vendor/
+
+# =====================================
+# Claude/AI Assistant Artifacts
+# =====================================
+.claude/
+claude_artifacts/
+.cursor/
+.copilot/
+
+# =====================================
+# Custom Excludes for This Project
+# =====================================
+# Exclude all backup files from any directory
+**/*.bak
+**/*~
+**/*.swp
+
+# Exclude any personal notes
+personal_notes/
+my_notes/
+private/
+
+# Large test files
+large_test_files/
+*.large.m4a
+*.test.mp4
+
+# Local configuration overrides
+local.xcconfig
+development.xcconfig
+
+# Screenshot and demo files
+screenshots/
+demos/
+*.mov
+*.gif
+!demo.gif  # Keep the main demo if exists

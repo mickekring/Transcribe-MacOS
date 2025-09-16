@@ -1,0 +1,150 @@
+/* Main Window */
+"open_files" = "Öppna filer...";
+"new_recording" = "Ny inspelning";
+"batch_transcription" = "Batch-transkribering";
+"support" = "Support";
+"drag_drop_hint" = "Öppna en fil, spela in eller dra och släpp en mediafil för att transkribera.";
+"drop_files_here" = "Släpp filer här för att transkribera";
+"search_history" = "Sökhistorik";
+"older" = "Äldre";
+"enter_url_placeholder" = "Ange YouTube, ljud- eller videofilens URL...";
+
+/* Settings - General */
+"settings" = "Inställningar";
+"general" = "Allmänt";
+"transcription" = "Transkribering";
+"local_models" = "Lokala modeller";
+"cloud_models" = "Molnmodeller";
+"api_keys" = "API-nycklar";
+"services" = "Tjänster";
+"app_language" = "Appspråk";
+"app_language_description" = "Välj språk för applikationsgränssnittet";
+"english" = "English";
+"swedish" = "Svenska";
+"play_sound_when_finished" = "Spela ljud när det är klart";
+"play_sound_description" = "Spela ett litet ljud när en transkription har slutförts";
+"save_destination" = "Sparplats";
+"save_destination_description" = "Välj mappen där nya inspelningar sparas";
+"choose_button" = "Välj...";
+
+/* KB Whisper Models */
+"kb_whisper_description" = "Vidaretränad version av Whisper från Kungliga Biblioteket för svensk transkribering";
+"model_tiny_description" = "Snabbast, lägre noggrannhet";
+"model_base_description" = "Balanserad hastighet och noggrannhet";
+"model_small_description" = "God noggrannhet";
+"model_medium_description" = "Hög noggrannhet";
+"model_large_description" = "Bästa noggrannhet";
+
+/* Settings - Transcription Models */
+"local_transcription_models" = "Lokala transkriptionsmodeller";
+"local_models_description" = "KB Whisper-modeller optimerade för svenska";
+"cloud_transcription_models" = "Molntranskriptionsmodeller";
+"cloud_models_description" = "Modeller tillgängliga via API-tjänster";
+"fastest_lower_accuracy" = "Snabbast, lägre noggrannhet";
+"balanced_speed_accuracy" = "Balanserad hastighet och noggrannhet";
+"good_accuracy" = "God noggrannhet";
+"high_accuracy" = "Hög noggrannhet";
+"best_accuracy" = "Bästa noggrannhet";
+"download" = "Ladda ner";
+"select" = "Välj";
+"selected" = "Vald";
+"remove" = "Ta bort";
+"api_key_required" = "API-nyckel krävs";
+"available" = "Tillgänglig";
+
+/* Settings - API Keys */
+"api_keys" = "API-nycklar";
+"api_key" = "API-nyckel";
+"save" = "Spara";
+"test_connection" = "Testa anslutning";
+"get_api_key_from" = "Hämta API-nyckel från";
+"host_url" = "Värd-URL";
+"available_models" = "Tillgängliga modeller:";
+"ollama_description" = "Ollama körs lokalt på din dator. Ingen API-nyckel krävs.";
+"ollama_local" = "Ollama (Lokal)";
+"get_api_key_berget" = "Hämta API-nyckel från Berget";
+
+/* Settings - AI Services */
+"ai_services" = "AI-tjänster";
+"language_models" = "Språkmodeller";
+"enable_llm_processing" = "Aktivera LLM-bearbetning";
+"llm_processing_description" = "Bearbeta transkriptioner med stora språkmodeller för sammanfattningar, insikter och mer";
+"default_provider" = "Standardleverantör";
+"ollama_local" = "Ollama (Lokal)";
+"default_prompts" = "Standardprompter";
+"prompts_description" = "Anpassa prompterna som används för AI-bearbetning";
+"summary" = "Sammanfattning";
+"action_items" = "Åtgärdspunkter";
+"key_points" = "Nyckelpunkter";
+
+/* Dropdown menus */
+"language" = "Språk";
+"model" = "Modell";
+"select_model" = "Välj modell";
+"more_languages" = "Fler språk";
+
+/* Languages */
+"language_auto" = "Auto";
+"language_swedish" = "Svenska";
+"language_english" = "Engelska";
+"language_arabic" = "Arabiska";
+"language_chinese" = "Kinesiska";
+"language_danish" = "Danska";
+"language_dutch" = "Holländska";
+"language_finnish" = "Finska";
+"language_french" = "Franska";
+"language_german" = "Tyska";
+"language_hindi" = "Hindi";
+"language_italian" = "Italienska";
+"language_japanese" = "Japanska";
+"language_korean" = "Koreanska";
+"language_norwegian" = "Norska";
+"language_polish" = "Polska";
+"language_portuguese" = "Portugisiska";
+"language_russian" = "Ryska";
+"language_spanish" = "Spanska";
+"language_turkish" = "Turkiska";
+"language_ukrainian" = "Ukrainska";
+
+/* Common */
+"transcribe" = "Transkribera";
+"settings" = "Inställningar";
+"preferences" = "Inställningar";
+"about" = "Om";
+
+/* Transcription View */
+"display_mode" = "Visningsläge";
+"transcript" = "Transkribering";
+"segments" = "Segment";
+"save_copy" = "Spara / Kopiera";
+"save_as" = "Spara som...";
+"copy_text" = "Kopiera text";
+"duration" = "Längd";
+"transcription_time" = "Transkriberad tid";
+"words" = "Ord";
+"transcribing" = "Transkriberar...";
+"speed" = "Hastighet";
+"format" = "Format";
+"export_text" = "Text (.txt)";
+"export_srt" = "Undertexter (.srt)";
+"export_vtt" = "WebVTT (.vtt)";
+"options" = "Val";
+"font_size" = "Textstorlek";
+"show_timestamps" = "Visa tidsmarkering";
+
+/* WhisperKit Messages */
+"downloading_whisperkit_model" = "Laddar ner WhisperKit-modell (endast första gången, detta kan ta en stund)...";
+"initializing_whisperkit" = "Initierar WhisperKit...";
+"loading_audio_file" = "Laddar ljudfil...";
+
+/* Audio Processing Messages */
+"preparing_audio_file" = "Förbereder ljudfil...";
+"analyzing_audio_file" = "Analyserar ljudfil...";
+"converting_audio_format" = "Konverterar ljud till optimalt format...";
+"splitting_audio_chunks" = "Delar upp ljudet i delar...";
+"sending_audio_berget" = "Skickar ljudfil till Berget...";
+"processing_local_model" = "Bearbetar med lokal modell...";
+"transcribing_chunk" = "Transkriberar del %d av %d...";
+"processing_chunk" = "Bearbetar del %d av %d...";
+"merging_results" = "Sammanfogar transkriptionsresultat...";
+"chunk_of" = "Del %d av %d";

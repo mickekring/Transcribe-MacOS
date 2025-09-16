@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4042913A2E793C6C00DB2587 /* YouTubeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 404291392E793C6C00DB2587 /* YouTubeKit */; };
+		4087E8D52E769BAF00C23FC9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4087E8D42E769BAF00C23FC9 /* Accelerate.framework */; };
+		40DACEB62E75F6ED00E0B532 /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40DACEB52E75F6ED00E0B532 /* WhisperKit */; };
+		40DACEB82E75F6ED00E0B532 /* whisperkit-cli in Frameworks */ = {isa = PBXBuildFile; productRef = 40DACEB72E75F6ED00E0B532 /* whisperkit-cli */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		40DACE5C2E75861F00E0B532 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4087E8D42E769BAF00C23FC9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		4087E8D62E769BBC00C23FC9 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		4087E8D82E769BC600C23FC9 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		4087E8DA2E769BE100C23FC9 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
 		40DACE4D2E75861E00E0B532 /* Transcribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DACE5B2E75861F00E0B532 /* TranscribeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranscribeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DACE652E75861F00E0B532 /* TranscribeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranscribeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4087E8D52E769BAF00C23FC9 /* Accelerate.framework in Frameworks */,
+				40DACEB62E75F6ED00E0B532 /* WhisperKit in Frameworks */,
+				40DACEB82E75F6ED00E0B532 /* whisperkit-cli in Frameworks */,
+				4042913A2E793C6C00DB2587 /* YouTubeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,7 @@
 				40DACE4F2E75861E00E0B532 /* Transcribe */,
 				40DACE5E2E75861F00E0B532 /* TranscribeTests */,
 				40DACE682E75861F00E0B532 /* TranscribeUITests */,
+				40DACEB32E75F6A000E0B532 /* Frameworks */,
 				40DACE4E2E75861E00E0B532 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +106,17 @@
 				40DACE652E75861F00E0B532 /* TranscribeUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		40DACEB32E75F6A000E0B532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4087E8DA2E769BE100C23FC9 /* MetalPerformanceShaders.framework */,
+				4087E8D82E769BC600C23FC9 /* MetalKit.framework */,
+				4087E8D62E769BBC00C23FC9 /* Metal.framework */,
+				4087E8D42E769BAF00C23FC9 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +139,9 @@
 			);
 			name = Transcribe;
 			packageProductDependencies = (
+				40DACEB52E75F6ED00E0B532 /* WhisperKit */,
+				40DACEB72E75F6ED00E0B532 /* whisperkit-cli */,
+				404291392E793C6C00DB2587 /* YouTubeKit */,
 			);
 			productName = Transcribe;
 			productReference = 40DACE4D2E75861E00E0B532 /* Transcribe.app */;
@@ -175,6 +205,7 @@
 				TargetAttributes = {
 					40DACE4C2E75861E00E0B532 = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 					40DACE5A2E75861F00E0B532 = {
 						CreatedOnToolsVersion = 16.4;
@@ -192,9 +223,14 @@
 			knownRegions = (
 				en,
 				Base,
+				sv,
 			);
 			mainGroup = 40DACE442E75861E00E0B532;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				40DACEB42E75F6ED00E0B532 /* XCRemoteSwiftPackageReference "WhisperKit" */,
+				404291382E793C6C00DB2587 /* XCRemoteSwiftPackageReference "YouTubeKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 40DACE4E2E75861E00E0B532 /* Products */;
 			projectDirPath = "";
@@ -313,8 +349,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
+					"GGML_VERSION=1",
+					"GGML_COMMIT=\\\"unknown\\\"",
+					"GGML_USE_ACCELERATE=1",
+					"WHISPER_VERSION=\\\"1.0.0\\\"",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -324,11 +362,17 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_COMPILER_FLAGS = "-I$(SRCROOT)/Libraries/whisper.cpp/ggml/src";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DGGML_VERSION=1",
+					"-DGGML_USE_ACCELERATE\"",
+				);
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = " Transcribe/WhisperCpp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -374,6 +418,12 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GGML_VERSION=1",
+					"GGML_COMMIT=\\\"unknown\\\"",
+					"GGML_USE_ACCELERATE=1",
+					"WHISPER_VERSION=\\\"1.0.0\\\"",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -382,10 +432,16 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_COMPILER_FLAGS = "-I$(SRCROOT)/Libraries/whisper.cpp/ggml/src";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"-DGGML_VERSION=1",
+					"-DGGML_USE_ACCELERATE\"",
+				);
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = " Transcribe/WhisperCpp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -394,24 +450,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Transcribe/Transcribe.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RW3JS6CR99;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Transcribe behöver tillgång till din mikrofon för att spela in ljud för transkribering.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mickekring.transcribe.Transcribe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -421,24 +487,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Transcribe/Transcribe.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RW3JS6CR99;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Transcribe behöver tillgång till din mikrofon för att spela in ljud för transkribering.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mickekring.transcribe.Transcribe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -551,6 +626,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		404291382E793C6C00DB2587 /* XCRemoteSwiftPackageReference "YouTubeKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexeichhorn/YouTubeKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.9;
+			};
+		};
+		40DACEB42E75F6ED00E0B532 /* XCRemoteSwiftPackageReference "WhisperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/WhisperKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		404291392E793C6C00DB2587 /* YouTubeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 404291382E793C6C00DB2587 /* XCRemoteSwiftPackageReference "YouTubeKit" */;
+			productName = YouTubeKit;
+		};
+		40DACEB52E75F6ED00E0B532 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40DACEB42E75F6ED00E0B532 /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = WhisperKit;
+		};
+		40DACEB72E75F6ED00E0B532 /* whisperkit-cli */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40DACEB42E75F6ED00E0B532 /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = "whisperkit-cli";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40DACE452E75861E00E0B532 /* Project object */;
 }

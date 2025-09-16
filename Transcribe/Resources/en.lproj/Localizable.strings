@@ -1,0 +1,150 @@
+/* Main Window */
+"open_files" = "Open Files...";
+"new_recording" = "New Recording";
+"batch_transcription" = "Batch Transcription";
+"support" = "Support";
+"drag_drop_hint" = "Open a file, record or drag & drop a media file to transcribe.";
+"drop_files_here" = "Drop files here to transcribe";
+"search_history" = "Search History";
+"older" = "Older";
+"enter_url_placeholder" = "Enter YouTube, Audio or Video File URL...";
+
+/* Settings - General */
+"settings" = "Settings";
+"general" = "General";
+"transcription" = "Transcription";
+"local_models" = "Local Models";
+"cloud_models" = "Cloud Models";
+"api_keys" = "API Keys";
+"services" = "Services";
+"app_language" = "App Language";
+"app_language_description" = "Choose the language for the application interface";
+"english" = "English";
+"swedish" = "Svenska";
+"play_sound_when_finished" = "Play sound when finished";
+"play_sound_description" = "Play a small sound when a transcription has completed";
+"save_destination" = "Save Destination";
+"save_destination_description" = "Choose the folder where new recordings are saved";
+"choose_button" = "Choose...";
+
+/* KB Whisper Models */
+"kb_whisper_description" = "Fine-tuned version of Whisper from the National Library of Sweden for Swedish transcription";
+"model_tiny_description" = "Fastest, lower accuracy";
+"model_base_description" = "Balanced speed and accuracy";
+"model_small_description" = "Good accuracy";
+"model_medium_description" = "High accuracy";
+"model_large_description" = "Best accuracy";
+
+/* Settings - Transcription Models */
+"local_transcription_models" = "Local Transcription Models";
+"local_models_description" = "KB Whisper models optimized for Swedish";
+"cloud_transcription_models" = "Cloud Transcription Models";
+"cloud_models_description" = "Models available through API services";
+"fastest_lower_accuracy" = "Fastest, lower accuracy";
+"balanced_speed_accuracy" = "Balanced speed and accuracy";
+"good_accuracy" = "Good accuracy";
+"high_accuracy" = "High accuracy";
+"best_accuracy" = "Best accuracy";
+"download" = "Download";
+"select" = "Select";
+"selected" = "Selected";
+"remove" = "Remove";
+"api_key_required" = "API Key Required";
+"available" = "Available";
+
+/* Settings - API Keys */
+"api_keys" = "API Keys";
+"api_key" = "API Key";
+"save" = "Save";
+"test_connection" = "Test Connection";
+"get_api_key_from" = "Get API Key from";
+"host_url" = "Host URL";
+"available_models" = "Available Models:";
+"ollama_description" = "Ollama runs locally on your machine. No API key required.";
+"ollama_local" = "Ollama (Local)";
+"get_api_key_berget" = "Get API Key from Berget";
+
+/* Settings - AI Services */
+"ai_services" = "AI Services";
+"language_models" = "Language Models";
+"enable_llm_processing" = "Enable LLM Processing";
+"llm_processing_description" = "Process transcriptions with Large Language Models for summaries, insights, and more";
+"default_provider" = "Default Provider";
+"ollama_local" = "Ollama (Local)";
+"default_prompts" = "Default Prompts";
+"prompts_description" = "Customize the prompts used for AI processing";
+"summary" = "Summary";
+"action_items" = "Action Items";
+"key_points" = "Key Points";
+
+/* Dropdown menus */
+"language" = "Language";
+"model" = "Model";
+"select_model" = "Select Model";
+"more_languages" = "More Languages";
+
+/* Languages */
+"language_auto" = "Auto-detect";
+"language_swedish" = "Swedish";
+"language_english" = "English";
+"language_arabic" = "Arabic";
+"language_chinese" = "Chinese";
+"language_danish" = "Danish";
+"language_dutch" = "Dutch";
+"language_finnish" = "Finnish";
+"language_french" = "French";
+"language_german" = "German";
+"language_hindi" = "Hindi";
+"language_italian" = "Italian";
+"language_japanese" = "Japanese";
+"language_korean" = "Korean";
+"language_norwegian" = "Norwegian";
+"language_polish" = "Polish";
+"language_portuguese" = "Portuguese";
+"language_russian" = "Russian";
+"language_spanish" = "Spanish";
+"language_turkish" = "Turkish";
+"language_ukrainian" = "Ukrainian";
+
+/* Common */
+"transcribe" = "Transcribe";
+"settings" = "Settings";
+"preferences" = "Preferences";
+"about" = "About";
+
+/* Transcription View */
+"display_mode" = "Display Mode";
+"transcript" = "Transcript";
+"segments" = "Segments";
+"save_copy" = "Save / Copy";
+"save_as" = "Save as...";
+"copy_text" = "Copy Text";
+"duration" = "Duration";
+"transcription_time" = "Transcription Time";
+"words" = "Words";
+"transcribing" = "Transcribing...";
+"speed" = "Speed";
+"format" = "Format";
+"export_text" = "Text (.txt)";
+"export_srt" = "Subtitles (.srt)";
+"export_vtt" = "WebVTT (.vtt)";
+"options" = "Options";
+"font_size" = "Font Size";
+"show_timestamps" = "Show timestamps";
+
+/* WhisperKit Messages */
+"downloading_whisperkit_model" = "Downloading WhisperKit model (first time only, this may take a moment)...";
+"initializing_whisperkit" = "Initializing WhisperKit...";
+"loading_audio_file" = "Loading audio file...";
+
+/* Audio Processing Messages */
+"preparing_audio_file" = "Preparing audio file...";
+"analyzing_audio_file" = "Analyzing audio file...";
+"converting_audio_format" = "Converting audio to optimal format...";
+"splitting_audio_chunks" = "Splitting audio into chunks...";
+"sending_audio_berget" = "Sending audio file to Berget...";
+"processing_local_model" = "Processing with local model...";
+"transcribing_chunk" = "Transcribing chunk %d of %d...";
+"processing_chunk" = "Processing chunk %d of %d...";
+"merging_results" = "Merging transcription results...";
+"chunk_of" = "Chunk %d of %d";
