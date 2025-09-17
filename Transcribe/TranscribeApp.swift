@@ -15,6 +15,7 @@ struct TranscribeApp: App {
                 .environmentObject(settingsManager)
                 .frame(minWidth: 1100, minHeight: 700)
                 .frame(idealWidth: 1400, idealHeight: 850)
+                .preferredColorScheme(.light)
         }
         .windowStyle(.automatic)
         .windowToolbarStyle(.unified)

@@ -220,6 +220,14 @@ struct ContentView: View {
                     .underline()
             }
             .buttonStyle(.plain)
+            
+            // Version and build number
+            if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+               let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
+                Text("Version \(version) (\(build))")
+                    .font(.system(size: 12))
+                    .foregroundColor(.textSecondary)
+            }
         }
     }
     
